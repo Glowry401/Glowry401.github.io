@@ -117,3 +117,9 @@ select:focus {
   #calc-form .form-field { margin-right: 0; }
   #calc-form .button { width: 100%; }
 }
+/* Multimedia */
+.media-block { margin-top: 28px; }
+audio { width: 100%; max-width: 560px; }
+.media-transcript { margin-top: 24px; max-width: 760px; }
+.media-transcript summary { cursor: pointer; font-weight: 700; color: var(--primary); }
+.media-transcript p { color: var(--muted); }
