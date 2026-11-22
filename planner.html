@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple academic planner to add, complete and delete study tasks. Tasks are saved in your browser.">
+  <title>Academic Planner | Glory Emmanuel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/planner.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">GE<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" aria-current="page" href="planner.html">Academic Planner</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro">
+      <p class="eyebrow">STAY ORGANISED</p>
+      <h1>Academic Planner</h1>
+      <p>Add your academic activities, track completed work and remove tasks you no longer need.</p>
+    </section>
+
+    <section class="planner-panel">
+      <form id="task-form" class="task-form">
+        <div class="form-field">
+          <label for="task-input">Task description</label>
+          <input id="task-input" type="text" placeholder="e.g. Read COS 106 notes" maxlength="120" autocomplete="off" required>
+        </div>
+        <div class="form-field">
+          <label for="task-date">Due date (optional)</label>
+          <input id="task-date" type="date" placeholder="YYYY-MM-DD">
+        </div>
+        <button class="button" type="submit">Add task</button>
+      </form>
+
+      <div class="planner-summary" role="status">
+        <span id="task-count">0 tasks</span>
+        <span aria-hidden="true">·</span>
+        <span id="completed-count">0 completed</span>
+      </div>
+
+      <ul id="task-list" class="task-list" aria-live="polite"></ul>
+      <p id="empty-message" class="empty-message">You have no tasks yet. Add your first academic task above.</p>
+    </section>
+
+    <p class="small-note">Your tasks are saved in this browser using local storage. They remain on this device/browser and are not sent to a server.</p>
+  </main>
+
+  <footer class="site-footer"><p>© <span class="current-year"></span> Glory Emmanuel. Student Portfolio.</p></footer>
+</body>
+</html>

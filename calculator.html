@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple calculator built with HTML, CSS and JavaScript by Glory Emmanuel.">
+  <title>Calculator | Glory Emmanuel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/calculator.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">GE<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a class="active" aria-current="page" href="projects.html">Projects</a>
+      <a href="planner.html">Academic Planner</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro">
+      <p class="eyebrow">PROJECT 01</p>
+      <h1>Simple Calculator</h1>
+      <p>Enter two numbers, choose an operation and press Calculate.</p>
+    </section>
+
+    <section class="content-card">
+      <form id="calc-form" novalidate>
+        <div class="form-field">
+          <label for="num1">First number</label>
+          <input id="num1" type="number" step="any" required>
+        </div>
+        <div class="form-field">
+          <label for="operation">Operation</label>
+          <select id="operation">
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (−)</option>
+            <option value="multiply">Multiplication (×)</option>
+            <option value="divide">Division (÷)</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="num2">Second number</label>
+          <input id="num2" type="number" step="any" required>
+        </div>
+        <button class="button" type="submit">Calculate</button>
+      </form>
+      <p id="calc-result" class="form-feedback" aria-live="polite"></p>
+    </section>
+
+    <p><a class="text-link" href="projects.html">← Back to projects</a></p>
+  </main>
+
+  <footer class="site-footer"><p>© <span class="current-year"></span> Glory Emmanuel. Student Portfolio.</p></footer>
+</body>
+</html>

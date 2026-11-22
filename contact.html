@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Glory Emmanuel about learning, technology or collaboration.">
+  <title>Contact | Glory Emmanuel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">GE<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="planner.html">Academic Planner</a>
+      <a class="active" aria-current="page" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h1>Contact Me</h1>
+      <p>Use the form below to send a message.</p>
+    </section>
+
+    <section class="contact-layout">
+      <div class="content-card">
+        <h2>Get in touch</h2>
+        <p>I'd be happy to hear from you about learning, technology or collaboration.</p>
+        <p><strong>Email:</strong> <a href="mailto:glowrealemmanuel@gmail.com">glowrealemmanuel@gmail.com</a></p>
+        <p><strong>Location:</strong> Benin City, Edo State, Nigeria</p>
+      </div>
+
+      <form id="contact-form" class="content-card contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+          <small class="error" id="name-error"></small>
+        </div>
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+          <small class="error" id="email-error"></small>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="e.g. 08012345678" required aria-describedby="phone-error">
+          <small class="error" id="phone-error"></small>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+          <small class="error" id="message-error"></small>
+        </div>
+        <button class="button" type="submit">Submit message</button>
+        <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+        <p class="small-note">This form checks your details in the browser but does not send or store messages. To reach me, please email me at the address above.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© <span class="current-year"></span> Glory Emmanuel. Student Portfolio.</p></footer>
+</body>
+</html>
