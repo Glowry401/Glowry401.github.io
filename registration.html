@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A student registration form with validation, built with HTML, CSS and JavaScript by Glory Emmanuel.">
+  <title>Student Registration | Glory Emmanuel</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/registration.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">GE<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a class="active" aria-current="page" href="projects.html">Projects</a>
+      <a href="planner.html">Academic Planner</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="page-intro">
+      <p class="eyebrow">PROJECT 02</p>
+      <h1>Student Registration Form</h1>
+      <p>Fill in your details and press Register. All fields are required.</p>
+    </section>
+
+    <form id="registration-form" class="content-card registration-form" novalidate>
+      <div class="form-field">
+        <label for="fullname">Full name</label>
+        <input id="fullname" name="fullname" type="text" autocomplete="name" required aria-describedby="fullname-error">
+        <small class="error" id="fullname-error"></small>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+        <small class="error" id="email-error"></small>
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="e.g. 08012345678" required aria-describedby="phone-error">
+        <small class="error" id="phone-error"></small>
+      </div>
+
+      <div class="form-field">
+        <label for="matric">Matriculation number</label>
+        <input id="matric" name="matric" type="text" autocomplete="off" required aria-describedby="matric-error">
+        <small class="error" id="matric-error"></small>
+      </div>
+
+      <div class="form-field">
+        <label for="programme">Programme of study</label>
+        <select id="programme" name="programme" required aria-describedby="programme-error">
+          <option value="">Select your programme</option>
+          <option value="computer-science">Computer Science</option>
+          <option value="software-engineering">Software Engineering</option>
+          <option value="information-technology">Information Technology</option>
+          <option value="other">Other</option>
+        </select>
+        <small class="error" id="programme-error"></small>
+      </div>
+
+      <div class="form-field">
+        <label for="level">Level</label>
+        <select id="level" name="level" required aria-describedby="level-error">
+          <option value="">Select your level</option>
+          <option value="100">100 Level</option>
+          <option value="200">200 Level</option>
+          <option value="300">300 Level</option>
+          <option value="400">400 Level</option>
+        </select>
+        <small class="error" id="level-error"></small>
+      </div>
+
+      <div class="form-field checkbox-field">
+        <input id="confirm" name="confirm" type="checkbox" aria-describedby="confirm-error">
+        <label for="confirm">I confirm that the details above are correct.</label>
+      </div>
+      <small class="error" id="confirm-error"></small>
+
+      <button class="button" type="submit">Register</button>
+      <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+      <p class="small-note">This demonstration checks your details in the browser. It does not send or store them.</p>
+    </form>
+
+    <p><a class="text-link" href="projects.html">← Back to projects</a></p>
+  </main>
+
+  <footer class="site-footer"><p>© <span class="current-year"></span> Glory Emmanuel. Student Portfolio.</p></footer>
+</body>
+</html>
